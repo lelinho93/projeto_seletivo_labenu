@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript">
+		function validateForm() {
+			var emailform = email.emailform.value;
+
+			if (emailform == "" || emailform.indexOf("@") == -1 || emailform.indexOf(".") == -1) {
+				alert("Digite um email válido!");
+				return false;
+			}
+
+			var emailForm = document.forms["email"].elements[0].value;
+			var message = ("Seja bem vindo(a) ", emailForm, "!")
+			alert("E-mail enviado com sucesso! Muito obrigado, entraremos em contato!")
+			document.getElementById("gotEmail").innerHTML = message + emailForm + '!';
+			return false
+		}
+	</script>
+
+<style>
+		.menu {
+			background-color: rgb(225, 85, 0);
+			padding: 0%;
+			height: 100%;
+			width: 101%;
+			margin-left: -8px;
+			margin-top: -8px;
+
+		}
+
+		body {
+			width: 99%;
+		}
+
+		section {
+			background-color: rgb(94, 100, 155);
+			padding: 0%;
+			height: 100%;
+			width: 101%;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-right: 0px;
+			margin-left: -8px;
+		}
+
+		.fraseinicio {
+			color: white;
+			font-size: 3vw;
+			font-family: Arial, sans-serif;
+
+		}
+
+
+		div {
+			background-color: rgb(94, 100, 155);
+			padding: 1%;
+			height: 150%;
+			width: 99%;
+			text-align: right;
+			margin-left: -8px;
+			font-size: 130%;
+		}
+
+		footer {
+			background-color: rgb(200, 200, 200);
+			padding: 2%;
+			width: 97%;
+			text-align: center;
+			color: white;
+			margin-left: -8px;
+			margin-bottom: -8px;
+		}
+
+		input[type=text] {
+			width: 40%;
+			box-sizing: border-box;
+			border: 1px solid black;
+			border-radius: 1px;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			background-color: white;
+			background-position: 65px 0px;
+			padding: 10px 10px 10px 10px;
+		}
+
+		.button {
+			background-color: rgb(225, 85, 0);
+			border: none;
+			color: white;
+			padding: 10px 6px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 15px;
+			font-family: Arial, sans-serif;
+			margin: 0px 0px;
+			cursor: pointer;
+		}
+
+		ul.topnav {
+			list-style-type: none;
+			margin: 0;
+			padding: 0%;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		ul.topnav li {
+			float: right;
+		}
+
+		ul.topnav li a {
+			display: block;
+			color: white;
+			font-size: 2vw;
+			font-family: Arial, sans-serif;
+			text-align: right;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+
+		.imagem {
+			padding: 2%;
+			width: 40%;
+		}
+
+		.msgboasvindas {
+			font-size: 130%;
+			font-family: Arial, sans-serif;
+		}
+
+
+		@media only screen and (max-width:500px) {
+			/* For mobile phones: */
+
+			.menu {
+				background-color: rgb(225, 85, 0);
+				padding: 0%;
+				height: 100%;
+				width: 104%;
+				margin-left: -8px;
+				margin-top: -8px;
+			}
+
+			section {
+				background-color: rgb(94, 100, 155);
+				width: 104%;
+				height: 10%;
+				text-align: center;
+				font-size: 65px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-right: 0px;
+				margin-left: -8px;
+			}
+
+			.fraseinicio {
+				color: white;
+				font-size: 8vw;
+				font-family: Arial, sans-serif;
+			}
+
+			.imagem {
+				padding: 0%;
+				width: 60%;
+			}
+
+			div {
+				background-color: rgb(94, 100, 155);
+				padding: 1%;
+				height: 10%;
+				width: 102%;
+				text-align: right;
+				font-size: 230%;
+				margin-top: -1px;
+				margin-left: -8px;
+			}
+
+			footer {
+				background-color: rgb(200, 200, 200);
+				padding: 6%;
+				height: 100%;
+				width: 92%;
+				text-align: center;
+				color: white;
+				margin-left: -8px;
+				margin-bottom: -8px;
+			}
+
+			input[type=text] {
+				width: 70%;
+				box-sizing: border-box;
+				border: 1px solid black;
+				border-radius: 1px;
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+				background-color: white;
+				background-position: 65px 0px;
+				padding: 10px 10px 10px 10px;
+			}
+
+			.button {
+				background-color: rgb(225, 85, 0);
+				border: none;
+				color: white;
+				padding: 10px 6px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 15px;
+				font-family: Arial, sans-serif;
+				margin: auto;
+				cursor: pointer;
+			}
+
+			ul.topnav {
+				list-style-type: none;
+				margin: 0;
+				padding: 0%;
+				overflow: hidden;
+				width: 100%;
+			}
+
+			ul.topnav li {
+				float: right;
+			}
+
+			ul.topnav li a {
+				display: block;
+				color: white;
+				font-size: 5vw;
+				font-family: Arial, sans-serif;
+				padding: 14px 16px;
+			}
+
+			div p1 {
+				text-align: left;
+				font-size: 50%;
+			}
+
+			.msgboasvindas {
+
+				font-size: 110%;
+				font-family: Arial, sans-serif;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="menu">
+
+		<ul class="topnav">
+			<li><a class="button" onclick="alert('Página em construção!')">Contato</a></li>
+			<li><a class="button" onclick="alert('Página em construção!')">Cursos</a></li>
+			<li><a class="button">Home</a></li>
+		</ul>
+
+	</div>
+
+	<section>
+		<br>
+
+		<p class="fraseinicio">Projeto Seletivo Labenu</p><br>
+
+		<img class="imagem" src="./assets/logo_labenu.png" alt="Labenu"><br><br><br>
+
+	</section>
+
+	<div>
+
+		<p1><i style="color: white; text-align: right ;">Turma Web Full Stack</i></p1>
+
+	</div>
+
+	<footer>
+
+		<p class="msgboasvindas" id="gotEmail"></p>
+
+		<form name="email" action="/action_page.php" onsubmit="return validateForm()">
+
+			<label for="email">
+
+				<input type="text" name="emailform" placeholder="Coloque seu email para contato! :)">
+
+			</label>
+
+			<button type="submit" class="button">Enviar</button>
+
+		</form>
+
+	</footer>
+
+</body>
+
+</html>
